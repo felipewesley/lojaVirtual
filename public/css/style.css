@@ -1,0 +1,146 @@
+/* This stylesheet created in June 29th, 2020. */
+
+/* Oficial color: #186CE9 */
+
+body {
+    font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    background-color: #FFF;
+    padding: 0px;
+    margin: 0px;
+}
+
+.title {
+    background: #6C9EEB;
+    padding: 7.5px 15px;
+    max-width: 100vw;
+}
+
+.container-page {
+    background: #B4FFE6;
+}
+
+div.content {
+    padding: 15px;
+}
+
+nav.navbar-main {
+    background: #186CE9;
+    padding: 5px;
+}
+
+nav ul li.item-menu {
+    display: inline;
+    color: #FFF;
+    font-weight: bold;
+    margin: 0 10px;
+    background: none;
+    font-size: 1.25em;
+    transition: ease 0.45s;
+}
+
+nav ul li.item-menu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li.item-menu:hover {
+    background: none;
+    cursor: pointer;
+    filter: drop-shadow(2.5px -2.5px 15px #FFF);
+}
+
+.mvc-camada {
+    border: 0px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 7.5px;
+    width: 25%;
+    max-width: 100vw;
+    display: inline-block;
+    height: 150px;
+    opacity: 75%;
+    transition: ease 0.5s;
+}
+
+.mvc-camada:hover {
+    color: #FFF;
+    opacity: 100%;
+    cursor: help;
+}
+
+.model {
+    background: #E65454;
+}
+.model:hover {
+    background: #E21818;
+}
+
+.view {
+    background: #54E667;
+}
+.view:hover {
+    background: #07C01f;
+}
+
+.controller {
+    background: #548EE6;
+}
+.controller:hover {
+    background: #186CE9;
+}
+
+@media (max-width: 400px) {
+    .mvc-camada {
+        width: 85%;
+    }
+}
+
+.camadas {
+    vertical-align: text-top;
+}
+
+.btn {
+    border: none;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 7.5px;
+    font-size: 1.2em;
+    transition: ease 0.35s;
+    filter: opacity(90%);
+}
+.btn:hover {
+    cursor: pointer;
+    /* filter: brightness(90%);  */
+    filter: opacity(100%);
+}
+
+.btn-primary {
+    background-color: #186CE9;
+    color: #FFF;
+}
+
+.btn-dark {
+    background-color: #1F1F1F;
+    color: #FFF;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.25em;
+    padding-bottom: 15px;
+}
+
+button#gotoproject {
+    font-size: 1em;
+}
+
+a.link-author {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.container-index-bd {
+	margin: 15px;
+}

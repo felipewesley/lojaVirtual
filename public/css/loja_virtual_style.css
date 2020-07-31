@@ -1,0 +1,122 @@
+/* This stylesheet created in July 30th, 2020. */
+body {
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.jumbotron-main {
+	/* padding: 50px 15px; */
+	text-align: center;
+}
+
+div.section {
+	height: 100vh;
+	padding: 75px 15px 0px 15px;
+}
+
+div.first-section {
+	background: #CCC;
+}
+
+div.second-section {
+	background: #4169E1;
+	text-align: center;
+}
+
+div.third-section {
+	background: #CCC;
+	text-align: center;
+}
+
+div.card {
+	margin-bottom: 50px;
+}
+
+div.carousel-inner {
+	text-align: center;
+}
+
+div.container-items div.card {
+	display: inline-flex;
+	margin: 7.5px;
+}
+
+img#img_scroll_down {
+	display: inline-flex;
+	vertical-align: baseline;
+}
+
+div#contact p.display-content#whatsapp {
+	border: 1.5px solid #369b5c;
+	border-radius: 15px;
+	background: #3eb36b;
+	font-weight: bold;
+	color: #FFF;
+	padding: 15px;
+	max-width: 100%;
+	width: 750px;
+	display: inline-block;
+	transition: ease 0.25s;
+}
+
+div#contact p.display-content#whatsapp:hover {
+	cursor: pointer;
+	border-color: #3eb36b;
+	background: #00e056;
+}
+
+div#contact p.display-content#email {
+	border: 1.5px solid #366a9b;
+	border-radius: 15px;
+	background: #3e7eb3;
+	font-weight: bold;
+	color: #FFF;
+	padding: 15px;
+	max-width: 100%;
+	width: 750px;
+	display: inline-block;
+	transition: ease 0.25s;
+}
+
+div#contact p.display-content#email:hover {
+	cursor: pointer;
+	border-color: #3e7eb3;
+	background: #4bc0dd;
+}
+
+div#contact p.display-content#address {
+	border: 1.5px solid #868686;
+	border-radius: 15px;
+	background: #9ea8b1;
+	font-weight: bold;
+	color: #000;
+	padding: 15px;
+	max-width: 100%;
+	width: 750px;
+	display: inline-block;
+	transition: ease 0.25s;
+}
+
+div#contact p.display-content#address:hover {
+	cursor: pointer;
+	border-color: #9ea8b1;
+	background: #c4c8cc;
+}
+
+div#btn-to-top {
+	transition: ease 0.25s;
+}
+
+div#btn-to-top.visible {
+	display: flex;
+	float: right;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 100;
+}
+
+div#btn-to-top.invisible {
+	display: none;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title> <?= $this->view->lojaShortName ?> </title>
+	<!-- Site icon in navigator -->
+	<link rel="shortcut icon" href="<?= $this->view->icon ?>" type="image/x-icon">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Internal CSS -->
+	<link rel="stylesheet" href="<?= $this->view->css ?>">
+</head>
+<body class="bg-light">
+
+	<div class="section first-section" id="main-section">
+
+		<div id="btn-to-top" class="invisible">
+			<a href="#main-section">
+				<img src="./img/to-top-icon.png" width="50">
+			</a>
+		</div>
+
+		<?php require_once 'navbar.phtml'; ?>
+
+		<div class="jumbotron-main">
+
+			<h1 class="display-4">
+				<?= $this->view->lojaName ?>
+			</h1>
+			<p class="lead">
+				Nossa loja agora está em formato virtual! <br>
+				E você pode encontrar todos os nossos produtos e promoções! Confira já!
+			</p>
+			<hr class="my-4">
+			<p>
+				Qualquer dúvida entre em contato conosco!
+			</p>
+			<a class="btn btn-primary btn-lg" href="#offers" role="button" id="navegar-pelo-site">
+				Navegar pelo site
+			</a>
+		</div>
+
+	</div>
+
+	<div class="section second-section" id="offers">
+
+		<p class="h2 text-light">Produtos em promoção</p>
+
+		<div class="container container-items">
+			<div class="card" style="width: 18rem;" id="card_01">
+				<img class="card-img-top" src="./img/item.jpg" alt="Imagem de capa do card">
+				<div class="card-body">
+					<h5 class="card-title">Produto especial</h5>
+					<p class="card-text">
+						Uma breve descrição do produto para o cliente visualizar rapidamente.
+					</p>
+					<p class="h2"> R$ 99,90 </p>
+					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
+						Ver mais
+					</button>
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;"  id="card_02">
+				<img class="card-img-top" src="./img/item.jpg" alt="Imagem de capa do card">
+				<div class="card-body">
+					<h5 class="card-title">Produto especial</h5>
+					<p class="card-text">
+						Uma breve descrição do produto para o cliente visualizar rapidamente.
+					</p>
+					<p class="h2"> R$ 99,90 </p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
+						Ver mais
+					</button>
+					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;"  id="card_03">
+				<img class="card-img-top" src="./img/item.jpg" alt="Imagem de capa do card">
+				<div class="card-body">
+					<h5 class="card-title">Produto especial</h5>
+					<p class="card-text">
+						Uma breve descrição do produto para o cliente visualizar rapidamente.
+					</p>
+					<p class="h2"> R$ 99,90 </p>
+					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
+						Ver mais
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<a href="#contact">
+			<img src="./img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" id="img_scroll_down">
+		</a>
+
+	</div>
+
+	<div class="section third-section" id="contact">
+
+		<p class="h2">Entre em contato</p>
+
+		<hr class="my-4">
+
+		<!-- https://api.whatsapp.com/send?phone=5541997476710&text=Olá%20<?= $this->view->lojaName ?>! -->
+
+		<p class="display-content h5" id="whatsapp">
+			<img src="./img/whatsapp_icon.png" width="50">
+			Conversar pelo WhatsApp
+		</p>
+
+		<p class="display-content h5" id="email">
+			<img src="./img/lollipop-icon-email-primary.png" width="50">
+			Enviar e-mail
+		</p>
+
+		<hr class="my-4">
+
+		<p class="lead">
+			ou venha visitar nosso estabelecimento
+		</p>
+
+		<p class="display-content h5" id="address">
+			<img src="./img/address-marker.png" width="50">
+			Av. 7 de setembro, 728
+		</p>
+
+	</div>
+
+	<!-- Informações do produto -->
+	<div class="modal fade" id="modalProduto" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ModalTitle">Informações do produto</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Informações do produto.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- jQuery include -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Internal JS -->
+	<script src="<?= $this->view->js ?>"></script>
+
+</body>
+</html>
