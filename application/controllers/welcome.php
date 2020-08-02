@@ -19,19 +19,33 @@ class Welcome extends CI_Controller {
 	 */
 	public function index(){
 
-		$info = []; 
+		$data = $this->dadosLoja();
 
-		$info['lojaName'] = 'Loja virtual de produtos eletrônicos'; 
-		$info['lojaShortName'] = 'LojaVirtual'; 
-
-		$this->load->view('homepage', $info);
+		$this->load->view('homepage', $data);
 	}
 
 	public function loginAdm(){
 		
-		$store['lojaName'] = 'LojaVirtual'; 
+		$data = $this->dadosLoja();
 
-		$this->load->view('loginAdm', $store);
+		$this->load->view('loginAdm', $data);
+	}
+
+	public function searchProduct(){
+
+		$data = $this->dadosLoja();
+
+		$this->load->view('searchProduct', $data);
+	}
+
+	public function dadosLoja(){
+		
+		$data = []; 
+
+		$data['lojaName'] = 'LojaVirtual :: Artigos esportivos';
+		$data['lojaShortName'] = 'LojaVirtual'; 
+
+		return $data;
 	}
 }
 

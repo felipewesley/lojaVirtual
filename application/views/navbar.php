@@ -29,7 +29,7 @@
 				<a class="nav-link" href="./welcome/loginAdm">Painel Adm</a>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
+		<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
 			<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search">
 			<button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
 		</form>

@@ -1,0 +1,67 @@
+body {
+    font-size: 16px;
+    overflow: scroll;
+}
+
+div#btn-to-top {
+	transition: ease 0.25s;
+}
+
+div#btn-to-top.visible {
+	display: flex;
+	float: right;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 100;
+}
+
+div#btn-to-top.invisible {
+	display: none;
+}
+
+.jumbotron-main {
+	/* padding: 50px 15px; */
+	text-align: center;
+}
+
+div.section {
+	padding: 75px 15px 0px 15px;
+}
+
+div.first-section {
+	background: #CCC;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    /* Scrollbar */
+    background: #CCC;
+    width: 7.5px;
+    height: 7.5px;
+}
+::-webkit-scrollbar-button {
+    /* Botoes da estrutura scroll */
+    display: none;
+}
+::-webkit-scrollbar-track {
+    /* Fundo barra scroll */
+    background: transparent;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track-piece {
+    /* Barra scroll */
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    /* Barra rolagem */
+    background: #3C3C3C;
+    border-radius: 75px;
+}
+::-webkit-scrollbar-corner {
+    /* Canto entre scroll lateral e inferior */
+    background: #CCC;
+}
+::-webkit-resizer {
+    background-color: chocolate;
+}
