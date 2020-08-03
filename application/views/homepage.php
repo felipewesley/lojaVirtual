@@ -3,14 +3,14 @@
 <head>
 	<title> <?= $lojaShortName ?> </title>
 	<!-- Site icon in navigator -->
-	<link rel="shortcut icon" href="./design/img/app-icon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/design/img/app-icon.png" type="image/x-icon">
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Internal CSS -->
-	<link rel="stylesheet" href="./design/styles/homepage.css">
+	<link rel="stylesheet" href="/design/styles/homepage.css">
 </head>
 <body class="bg-light">
 
@@ -18,14 +18,14 @@
 
 		<div id="btn-to-top" class="invisible">
 			<a href="#main-section">
-				<img src="./design/img/to-top-icon.png" width="50">
+				<img src="/design/img/to-top-icon.png" width="50">
 			</a>
 		</div>
 
 		<!-- Start fixed top navbar division -->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand nav-item-menu" href="#main-section">
-					<img src="../design/img/app-icon.png" width="30" height="30" class="d-inline-block align-top" alt="<?= $lojaShortName ?>" title="<?= $lojaShortName ?>">
+					<img src="/design/img/app-icon.png" width="30" height="30" class="d-inline-block align-top" alt="<?= $lojaShortName ?>" title="<?= $lojaShortName ?>">
 					<span id="lojaName"><?= $lojaShortName ?></span>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -51,7 +51,7 @@
 							<a class="nav-link" href="#contact">Contato</a>
 						</li>
 						<li class="nav-item nav-item-menu nav-item-adm" id="adm-panel-item">
-							<a class="nav-link" href="./welcome/loginAdm">Painel Adm</a>
+							<a class="nav-link" href="/welcome/loginAdm">Painel Adm</a>
 						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
@@ -88,7 +88,7 @@
 
 		<div class="container container-items">
 			<div class="card" style="width: 18rem;" id="card_01">
-				<img class="card-img-top" src="./design/img/item.jpg" alt="Imagem de capa do card">
+				<img class="card-img-top" src="/design/img/item.jpg" alt="Imagem de capa do card">
 				<div class="card-body">
 					<h5 class="card-title">Produto especial</h5>
 					<p class="card-text">
@@ -103,7 +103,7 @@
 			</div>
 
 			<div class="card" style="width: 18rem;"  id="card_02">
-				<img class="card-img-top" src="./design/img/item.jpg" alt="Imagem de capa do card">
+				<img class="card-img-top" src="/design/img/item.jpg" alt="Imagem de capa do card">
 				<div class="card-body">
 					<h5 class="card-title">Produto especial</h5>
 					<p class="card-text">
@@ -118,7 +118,7 @@
 			</div>
 
 			<div class="card" style="width: 18rem;"  id="card_03">
-				<img class="card-img-top" src="./design/img/item.jpg" alt="Imagem de capa do card">
+				<img class="card-img-top" src="/design/img/item.jpg" alt="Imagem de capa do card">
 				<div class="card-body">
 					<h5 class="card-title">Produto especial</h5>
 					<p class="card-text">
@@ -134,7 +134,7 @@
 		</div>
 
 		<a href="#contact">
-			<img src="./design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" id="img_scroll_down">
+			<img src="/design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" id="img_scroll_down">
 		</a>
 
 	</div>
@@ -148,12 +148,12 @@
 		<!-- https://api.whatsapp.com/send?phone=5541997476710&text=Olá%20<?= $info->lojaName ?>! -->
 
 		<p class="display-content h5" id="whatsapp">
-			<img src="./design/img/whatsapp_icon.png" width="50">
+			<img src="/design/img/whatsapp_icon.png" width="50">
 			Conversar pelo WhatsApp
 		</p>
 
 		<p class="display-content h5" id="email">
-			<img src="./design/img/lollipop-icon-email-primary.png" width="50">
+			<img src="/design/img/lollipop-icon-email-primary.png" width="50">
 			Enviar e-mail
 		</p>
 
@@ -164,7 +164,7 @@
 		</p>
 
 		<p class="display-content h5" id="address">
-			<img src="./design/img/address-marker.png" width="50">
+			<img src="/design/img/address-marker.png" width="50">
 			Av. 7 de setembro, 728
 		</p>
 
@@ -198,7 +198,7 @@
 	<!-- jQuery include -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<!-- Internal JS -->
-	<script src="./design/javascript/homepage.js"></script>
+	<script src="/design/javascript/homepage.js"></script>
 
 </body>
 </html>

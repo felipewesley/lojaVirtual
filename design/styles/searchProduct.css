@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     overflow: scroll;
+    background-color: #CCC;
 }
 
 div#btn-to-top {
@@ -22,7 +23,8 @@ div#btn-to-top.invisible {
 
 .jumbotron-main {
 	/* padding: 50px 15px; */
-	text-align: center;
+    text-align: center;
+    max-height: 100vh;
 }
 
 div.section {
@@ -64,4 +66,26 @@ div.first-section {
 }
 ::-webkit-resizer {
     background-color: chocolate;
+}
+.input-search {
+    display: inline-block;
+    width: 650px;
+    max-width: 100%;
+}
+div.input-search-lg {
+    width: 500px;
+    /* display: inline; */
+}
+
+div.input-search-sm {
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    div.input-search-lg {
+        display: none;
+    }
+    
+    div.input-search-sm {
+        display: inline;
+    }
 }
