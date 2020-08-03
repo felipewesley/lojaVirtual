@@ -25,7 +25,8 @@
             background: #E6E6FA;
             margin: 10px 2.5px;
             border: 1px solid #D0D0D0;
-            -webkit-box-shadow: 0 0 5px #3C3C3C;
+            /* -webkit-box-shadow: 0 0 5px #3C3C3C; */
+            box-shadow: 0 0 5px #3C3C3C;
             padding: 15px 5px;
             color: #FFF;
         }
