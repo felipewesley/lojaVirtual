@@ -74,7 +74,7 @@
 			<form action="#" method="get">
 				<div class="input-search input-search-lg">
 					<div class="input-group input-group-lg mb-3">
-						<input type="text" class="form-control" placeholder="O que você procura?" aria-label="Recipient's username" aria-describedby="button-addon2" id="input-search-lg" name="search_lg">
+						<input type="text" class="form-control" placeholder="O que você procura?" aria-label="Recipient's username" aria-describedby="button-addon2" id="input-search-lg" name="search_lg" autocomplete="off">
 						<div class="input-group-append">
 							<button class="btn btn-success" type="submit" id="button-addon2">Procurar</button>
 						</div>
@@ -82,7 +82,7 @@
 				</div>
 				<div class="input-search input-search-sm">
 					<p>
-						<input class="form-control form-control-lg" type="text" placeholder="O que você procura?" name="search_sm" id="input-search-sm">
+						<input class="form-control form-control-lg" type="text" placeholder="O que você procura?" name="search_sm" id="input-search-sm" autocomplete="off">
 					</p>
 					<button type="submit" class="btn btn-success btn-lg btn-block">Pesquisar</button>
 				</div>
