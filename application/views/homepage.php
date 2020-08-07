@@ -56,7 +56,7 @@
 					</ul>
 					<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
 						<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search">
-						<button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+						<button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
 					</form>
 				</div>
 			</nav>
@@ -64,20 +64,25 @@
 
 		<div class="jumbotron-main">
 
-			<h1 class="display-4">
-				<?= $lojaName ?>
-			</h1>
-			<p class="lead">
-				Nossa loja agora está em formato virtual! <br>
-				E você pode encontrar todos os nossos produtos e promoções! Confira já!
-			</p>
+			<img id="lojavirtual-logo" src="/design/img/lojavirtual_logo.png" alt="LojaVirtual">
+
+			<hr class="my-4">
+				<p class="h2">
+					A <?= $lojaShortName; ?> agora está em formato digital! <br>
+				</p>
+				<p class="lead">
+					E aqui você pode conferir todos os nossos produtos e promoções! 
+					<p>
+						<a class="btn btn-primary btn-lg" href="#offers" role="button" id="navegar-pelo-site">
+							Conferir promoções
+						</a>
+					</p>
+
+				</p>
 			<hr class="my-4">
 			<p>
-				Qualquer dúvida entre em contato conosco!
+				Qualquer dúvida <a href="#contact">entre em contato</a> conosco!
 			</p>
-			<a class="btn btn-primary btn-lg" href="#offers" role="button" id="navegar-pelo-site">
-				Navegar pelo site
-			</a>
 		</div>
 
 	</div>
@@ -149,7 +154,7 @@
 
 		<p class="display-content h5" id="whatsapp">
 			<img src="/design/img/whatsapp_icon.png" width="50">
-			Conversar pelo WhatsApp
+			Conversa no WhatsApp
 		</p>
 
 		<p class="display-content h5" id="email">

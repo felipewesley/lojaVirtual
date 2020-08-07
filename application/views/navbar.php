@@ -1,6 +1,7 @@
+<!-- Start fixed top navbar division -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	<a class="navbar-brand nav-item-menu" href="#main-section">
-		<img src="./design/img/app-icon.png" width="30" height="30" class="d-inline-block align-top" alt="<?= $lojaShortName ?>" title="<?= $lojaShortName ?>">
+		<img src="/design/img/app-icon.png" width="30" height="30" class="d-inline-block align-top" alt="<?= $lojaShortName ?>" title="<?= $lojaShortName ?>">
 		<span id="lojaName"><?= $lojaShortName ?></span>
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -26,12 +27,13 @@
 				<a class="nav-link" href="#contact">Contato</a>
 			</li>
 			<li class="nav-item nav-item-menu nav-item-adm" id="adm-panel-item">
-				<a class="nav-link" href="./welcome/loginAdm">Painel Adm</a>
+				<a class="nav-link" href="/welcome/loginAdm">Painel Adm</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
 			<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search">
-			<button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+			<button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
 		</form>
 	</div>
 </nav>
+<!-- End fixed top navbar division -->
