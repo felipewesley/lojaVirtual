@@ -37,6 +37,11 @@
 						<li class="nav-item nav-item-menu nav-item-home">
 							<a class="nav-link" href="#main-section">Home <span class="sr-only">(Página atual)</span></a>
 						</li>
+						<li class="nav-item nav-item-menu">
+							<a class="nav-link" href="#news">
+								Novidades <span id="notifications" class="badge badge-light">+9</span>
+							</a>
+						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Nossos produtos
@@ -73,8 +78,8 @@
 				<p class="lead">
 					E aqui você pode conferir todos os nossos produtos e promoções! 
 					<p>
-						<a class="btn btn-primary btn-lg" href="#offers" role="button" id="navegar-pelo-site">
-							Conferir promoções
+						<a class="btn btn-primary btn-lg" href="#news" role="button" id="to-news">
+							Conferir novidades da loja
 						</a>
 					</p>
 
@@ -84,6 +89,57 @@
 				Qualquer dúvida <a href="#contact">entre em contato</a> conosco!
 			</p>
 		</div>
+
+	</div>
+
+	<div class="section news-section" id="news">
+
+		<p class="h2 text-dark">Novidades</p>
+
+		<div class="container-carousel">
+		<div id="carousel-news" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-news" data-slide-to="1"></li>
+				<li data-target="#carousel-news" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="/design/banners/banner_adidas.jpg" alt="Nova coleção Adidas">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Produto especial</h5>
+						<p>Uma breve descrição do produto, apresentando suas informações.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="/design/banners/banner_chuteiras.jpg" alt="Nova coleção de chuteiras">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Produto especial</h5>
+						<p>Uma breve descrição do produto, apresentando suas informações.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="/design/banners/banner_camisas.jpg" alt="Nova coleção de camisas">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Produto especial</h5>
+						<p>Uma breve descrição do produto, apresentando suas informações.</p>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-ctrl carousel-control-prev" href="#carousel-news" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="carousel-ctrl carousel-control-next" href="#carousel-news" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Próximo</span>
+			</a>
+		</div>
+		</div>
+
+		<a href="#offers">
+			<img src="/design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" class="img_scroll_down">
+		</a>
 
 	</div>
 
@@ -100,7 +156,6 @@
 						Uma breve descrição do produto para o cliente visualizar rapidamente.
 					</p>
 					<p class="h2"> R$ 99,90 </p>
-					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
 						Ver mais
 					</button>
@@ -118,7 +173,6 @@
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
 						Ver mais
 					</button>
-					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
 				</div>
 			</div>
 
@@ -130,7 +184,6 @@
 						Uma breve descrição do produto para o cliente visualizar rapidamente.
 					</p>
 					<p class="h2"> R$ 99,90 </p>
-					<!-- <a href="#" class="btn btn-primary">Ver mais</a> -->
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
 						Ver mais
 					</button>
@@ -139,7 +192,7 @@
 		</div>
 
 		<a href="#contact">
-			<img src="/design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" id="img_scroll_down">
+			<img src="/design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" class="img_scroll_down">
 		</a>
 
 	</div>

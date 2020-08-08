@@ -29,6 +29,12 @@ div.second-section {
 	text-align: center;
 }
 
+div.news-section {
+	background: #F0F0F0;
+	text-align: center;
+	color: #3E3E3E;
+}
+
 div.third-section {
 	background: #CCC;
 	text-align: center;
@@ -47,7 +53,7 @@ div.container-items div.card {
 	margin: 7.5px;
 }
 
-img#img_scroll_down {
+img.img_scroll_down {
 	display: inline-flex;
 	vertical-align: baseline;
 }
@@ -126,7 +132,19 @@ div#btn-to-top.invisible {
 	display: none;
 }
 
-a#navegar-pelo-site {
+a#to-news {
 	width: 350px;
 	max-width: 100%;
+}
+div.container-carousel {
+	/* height: 75vh; */
+	max-width: 100%;
+	text-align: center;
+}
+div#carousel-news {
+	height: 50vh;
+}
+a.carousel-ctrl span {
+	filter: drop-shadow(0px 0px 5px #000);
+	/* border: 1px solid #3E3E3E; */
 }

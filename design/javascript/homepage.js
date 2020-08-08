@@ -27,7 +27,13 @@ $(document).ready(e => {
 
 /* Animated scroll */
 $('[href^="#"]').on('click', function(e) {
+	
+	if(String($(this).attr('class')).indexOf('carousel-ctrl') != -1){
+		return true;
+	}
+	
 	e.preventDefault();
+	
 	var id = $(this).attr('href'),
 	targetOffset = $(id).offset().top;
 
