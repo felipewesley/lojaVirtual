@@ -16,7 +16,7 @@
 
 	<div class="section first-section" id="main-section">
 
-		<div id="btn-to-top" class="invisible">
+		<div id="btn-to-top" class="without-classname" style="display: none;">
 			<a href="#main-section">
 				<img src="/design/img/to-top-icon.png" width="50">
 			</a>
@@ -60,7 +60,7 @@
 						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
-						<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search" autocomplete="off">
 						<button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
 					</form>
 				</div>
@@ -97,47 +97,56 @@
 		<p class="h2 text-dark">Novidades</p>
 
 		<div class="container-carousel">
-		<div id="carousel-news" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-news" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-news" data-slide-to="1"></li>
-				<li data-target="#carousel-news" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="/design/banners/banner_adidas.jpg" alt="Nova coleção Adidas">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Produto especial</h5>
-						<p>Uma breve descrição do produto, apresentando suas informações.</p>
+			<div id="carousel-news" class="carousel slide" data-ride="carousel">
+				<!--ol class="carousel-indicators">
+					<li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-news" data-slide-to="1"></li>
+					<li data-target="#carousel-news" data-slide-to="2"></li>
+				</ol-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="/design/banners/banner_adidas.jpg" alt="Nova coleção Adidas">
+						<div class="carousel-legend-custom">
+							<p class="slide-legend">
+								<a class="btn btn-block btn-primary btn-lg btn-more-info" href="#" role="button">
+									Mais detalhes sobre isso
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/design/banners/banner_chuteiras.jpg" alt="Nova coleção de chuteiras">
+						<div class="carousel-legend-custom">
+							<p class="slide-legend">
+								<a class="btn btn-block btn-primary btn-lg btn-more-info" href="#" role="button">
+									Mais detalhes sobre isso
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/design/banners/banner_camisas.jpg" alt="Nova coleção de camisas">
+						<div class="carousel-legend-custom">
+							<p class="slide-legend">
+								<a class="btn btn-block btn-primary btn-lg btn-more-info" href="#" role="button">
+									Mais detalhes sobre isso
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="/design/banners/banner_chuteiras.jpg" alt="Nova coleção de chuteiras">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Produto especial</h5>
-						<p>Uma breve descrição do produto, apresentando suas informações.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="/design/banners/banner_camisas.jpg" alt="Nova coleção de camisas">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Produto especial</h5>
-						<p>Uma breve descrição do produto, apresentando suas informações.</p>
-					</div>
-				</div>
+				<a class="carousel-ctrl carousel-control-prev" href="#carousel-news" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-ctrl carousel-control-next" href="#carousel-news" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Próximo</span>
+				</a>
 			</div>
-			<a class="carousel-ctrl carousel-control-prev" href="#carousel-news" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Anterior</span>
-			</a>
-			<a class="carousel-ctrl carousel-control-next" href="#carousel-news" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Próximo</span>
-			</a>
-		</div>
 		</div>
 
-		<a href="#offers">
+		<br><a href="#offers">
 			<img src="/design/img/arrow-down-icon.gif" title="Ir para próxima seção" width="75" class="img_scroll_down">
 		</a>
 
@@ -205,14 +214,19 @@
 
 		<!-- https://api.whatsapp.com/send?phone=5541997476710&text=Olá%20<?= $info->lojaName ?>! -->
 
-		<p class="display-content h5" id="whatsapp">
+		<p class="contact-item display-content h5" id="whatsapp">
 			<img src="/design/img/whatsapp_icon.png" width="50">
 			Conversa no WhatsApp
 		</p>
 
-		<p class="display-content h5" id="email">
+		<p class="contact-item display-content h5" id="email">
 			<img src="/design/img/lollipop-icon-email-primary.png" width="50">
 			Enviar e-mail
+		</p>
+
+		<p class="contact-item display-content h5" id="instagram">
+			<img src="/design/img/instagram_icon.png" width="50">
+			Ver loja no <span id="instagram">Instagram</span>
 		</p>
 
 		<hr class="my-4">
@@ -221,7 +235,7 @@
 			ou venha visitar nosso estabelecimento
 		</p>
 
-		<p class="display-content h5" id="address">
+		<p class="contact-item display-content h5" id="address">
 			<img src="/design/img/address-marker.png" width="50">
 			Av. 7 de setembro, 728
 		</p>

@@ -58,55 +58,61 @@ img.img_scroll_down {
 	vertical-align: baseline;
 }
 
-div#contact p.display-content#whatsapp {
-	border: 1.5px solid #369b5c;
+p.contact-item {
 	border-radius: 15px;
-	background: #3eb36b;
 	font-weight: bold;
-	color: #FFF;
 	padding: 15px;
 	max-width: 100%;
 	width: 750px;
 	display: inline-block;
 	transition: ease 0.25s;
+}
+
+div#contact p.display-content#whatsapp {
+	/* border: 1.5px solid #369b5c; */
+	/* background: #3eb36b; */
+	background: url("/design/img/bg/whatsapp_01.jpg");
+	color: #FFF;
 }
 
 div#contact p.display-content#whatsapp:hover {
 	cursor: pointer;
-	border-color: #3eb36b;
-	background: #00e056;
+	/* border-color: #3eb36b; */
+	/* background: #00e056; */
+	background: url("/design/img/bg/whatsapp_02.jpg");
 }
 
 div#contact p.display-content#email {
-	border: 1.5px solid #366a9b;
-	border-radius: 15px;
-	background: #3e7eb3;
-	font-weight: bold;
+	/* border: 1.5px solid #366a9b; */
+	/* background: #3e7eb3; */
+	background: url("/design/img/bg/email_01.jpg");
 	color: #FFF;
-	padding: 15px;
-	max-width: 100%;
-	width: 750px;
-	display: inline-block;
-	transition: ease 0.25s;
 }
-
 div#contact p.display-content#email:hover {
 	cursor: pointer;
-	border-color: #3e7eb3;
-	background: #4bc0dd;
+	/* border-color: #3e7eb3; */
+	/* background: #4bc0dd; */
+	background: url("/design/img/bg/email_02.jpg");
+}
+
+div#contact p.display-content#instagram {
+	/* border: 1.5px solid #9c31ff; */
+	/* background: #cc00ff; */
+	background: url("/design/img/bg/instagram_01.jpg");
+	color: #FFF;
+}
+
+div#contact p.display-content#instagram:hover {
+	cursor: pointer;
+	/* border-color: #9c31ff; */
+	/* background: #ba70ff; */
+	background: url("/design/img/bg/instagram_02.jpg");
 }
 
 div#contact p.display-content#address {
 	border: 1.5px solid #868686;
-	border-radius: 15px;
 	background: #9ea8b1;
-	font-weight: bold;
 	color: #000;
-	padding: 15px;
-	max-width: 100%;
-	width: 750px;
-	display: inline-block;
-	transition: ease 0.25s;
 }
 
 div#contact p.display-content#address:hover {
@@ -116,7 +122,21 @@ div#contact p.display-content#address:hover {
 }
 
 div#btn-to-top {
+	filter: opacity(50%);
 	transition: ease 0.25s;
+}
+
+div#btn-to-top:hover {
+	filter: opacity(100%);
+}
+
+div#btn-to-top {
+	display: flex;
+	float: right;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 100;
 }
 
 div#btn-to-top.visible {
@@ -136,15 +156,64 @@ a#to-news {
 	width: 350px;
 	max-width: 100%;
 }
+a.btn-more-info {
+	/* filter: drop-shadow(0px 0px 5px rgb(0, 154, 243)); */
+	margin: none;
+}
+p.slide-legend {
+	margin-top: 5px;
+}
 div.container-carousel {
 	/* height: 75vh; */
+	/* width: 810px; */
 	max-width: 100%;
 	text-align: center;
+	justify-content: center;
+	display: inline-flex;
+}
+@media only screen and (max-width: 350px){
+	a.carousel-ctrl {
+		border: 3px solid #000;
+		/* display: none; */
+	}
 }
 div#carousel-news {
-	height: 50vh;
+	width: 800px;
+	max-width: 100%;
 }
 a.carousel-ctrl span {
 	filter: drop-shadow(0px 0px 5px #000);
 	/* border: 1px solid #3E3E3E; */
+}
+/* Scrollbar style */
+::-webkit-scrollbar {
+    /* Scrollbar */
+    background: transparent;
+    width: 7.5px;
+    height: 7.5px;
+}
+::-webkit-scrollbar-button {
+    /* Botoes da estrutura scroll */
+    display: none;
+}
+::-webkit-scrollbar-track {
+    /* Fundo barra scroll */
+    background-color: none;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track-piece {
+    /* Barra scroll */
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    /* Barra rolagem */
+    background: #3C3C3C;
+    border-radius: 75px;
+}
+::-webkit-scrollbar-corner {
+    /* Canto entre scroll lateral e inferior */
+    background: #CCC;
+}
+::-webkit-resizer {
+    background-color: #3E3E3E;
 }

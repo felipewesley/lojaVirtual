@@ -38,7 +38,7 @@
 						<a class="nav-link" href="/welcome">Home</a>
 					</li>
 					<li class="nav-item nav-item-menu">
-							<a class="nav-link" href="#news">
+							<a class="nav-link" href="/welcome#news">
 								Novidades <span id="notifications" class="badge badge-light">+9</span>
 							</a>
 						</li>
@@ -60,8 +60,8 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0" action="/welcome/searchProduct" method="get">
-					<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search">
-					<button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+					<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar" id="product_search"  autocomplete="off">
+					<button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
 				</form>
 			</div>
 		</nav>
@@ -81,7 +81,7 @@
 					<div class="input-group input-group-lg mb-3">
 						<input type="text" class="form-control" placeholder="O que você procura?" aria-label="Recipient's username" aria-describedby="button-addon2" id="input-search-lg" name="search_lg" autocomplete="off">
 						<div class="input-group-append">
-							<button class="btn btn-success" type="submit" id="button-addon2">Procurar</button>
+							<button class="btn btn-info" type="submit" id="button-addon2">Procurar</button>
 						</div>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 					<p>
 						<input class="form-control form-control-lg" type="text" placeholder="O que você procura?" name="search_sm" id="input-search-sm" autocomplete="off">
 					</p>
-					<button type="submit" class="btn btn-success btn-lg btn-block">Pesquisar</button>
+					<button type="submit" class="btn btn-info btn-lg btn-block">Pesquisar</button>
 				</div>
 			</form>
 
