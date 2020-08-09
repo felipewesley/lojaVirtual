@@ -40,12 +40,22 @@ $('[href^="#"]').on('click', function(e) {
 	$('html, body').animate({
 		scrollTop: targetOffset
 	}, 750);
-	$('#btn-to-top').addClass('visible').removeClass('invisible').click(e => {
-		$('#btn-to-top').addClass('invisible').removeClass('visible')
-	})
-	$('li.nav-item-home, a.nav-item-menu').click(e => {
-		$('#btn-to-top').addClass('invisible').removeClass('visible')
-	})
+});
+
+/* Show/Hide to-top button */
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > (window.innerHeight/2)) {
+			$('#btn-to-top').fadeIn();
+        } else {
+			$('#btn-to-top').fadeOut();
+        }
+    });
+
+    $('#btn-to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 });
 
 /* Hide navbar to clicked */
