@@ -12,7 +12,7 @@
 	<!-- Internal CSS -->
 	<link rel="stylesheet" href="/design/styles/homepage.css">
 </head>
-<body class="bg-light">
+<body class="bg-light" onselectstart="return false">
 
 	<div class="section first-section" id="main-section">
 
