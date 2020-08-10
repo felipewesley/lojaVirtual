@@ -12,7 +12,7 @@
 	<!-- Internal CSS -->
     <link rel="stylesheet" href="/design/styles/searchProduct.css">
 </head>
-<body>
+<body onselectstart="return false">
 
 	<div class="section first-section" id="main-section">
 
