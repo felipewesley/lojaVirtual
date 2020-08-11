@@ -4,6 +4,12 @@ body {
     background-color: #CCC;
 }
 
+@media only screen and (max-width: 380px) {
+	body {
+		font-size: 14px;
+	}
+}
+
 div#btn-to-top {
 	transition: ease 0.25s;
 }

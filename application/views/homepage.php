@@ -217,17 +217,17 @@
 		<p class="contact-item display-content h5" id="whatsapp">
 			<img src="/design/img/whatsapp_icon.png" width="50">
 			Conversa no WhatsApp
-		</p>
+		</p><br>
 
 		<p class="contact-item display-content h5" id="email">
 			<img src="/design/img/lollipop-icon-email-primary.png" width="50">
 			Enviar e-mail
-		</p>
+		</p><br>
 
 		<p class="contact-item display-content h5" id="instagram">
 			<img src="/design/img/instagram_icon.png" width="50">
 			Ver loja no <span id="instagram">Instagram</span>
-		</p>
+		</p><br>
 
 		<hr class="my-4">
 

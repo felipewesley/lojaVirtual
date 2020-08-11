@@ -5,6 +5,12 @@ body {
 	/* overflow: hidden; */
 }
 
+@media only screen and (max-width: 380px) {
+	body {
+		font-size: 14px;
+	}
+}
+
 .jumbotron-main {
 	/* padding: 50px 15px; */
 	text-align: center;
@@ -69,30 +75,40 @@ p.contact-item {
 }
 
 div#contact p.display-content#whatsapp {
-	/* border: 1.5px solid #369b5c; */
-	/* background: #3eb36b; */
-	background: url("/design/img/bg/whatsapp_01.jpg");
+	border: 1.5px solid #369b5c;
+	background: #3eb36b;
+	/* background: url("/design/img/bg/whatsapp_01.jpg"); */
 	color: #FFF;
 }
 
 div#contact p.display-content#whatsapp:hover {
 	cursor: pointer;
-	/* border-color: #3eb36b; */
-	/* background: #00e056; */
-	background: url("/design/img/bg/whatsapp_02.jpg");
+	border-color: #3eb36b;
+	background: #00e056;
+	/* background: url("/design/img/bg/whatsapp_02.jpg"); */
 }
 
+/*div#contact p.display-content#whatsapp {
+	color: #FFF;
+	background: linear-gradient(
+		90deg, 
+		rgba(158,255,195,1) 0%, 
+		rgba(0,255,98,1) 50%, 
+		rgba(158,255,195,1) 100%
+	);
+}*/
+
 div#contact p.display-content#email {
-	/* border: 1.5px solid #366a9b; */
-	/* background: #3e7eb3; */
-	background: url("/design/img/bg/email_01.jpg");
+	border: 1.5px solid #366a9b;
+	background: #3e7eb3;
+	/* background: url("/design/img/bg/email_01.jpg"); */
 	color: #FFF;
 }
 div#contact p.display-content#email:hover {
 	cursor: pointer;
-	/* border-color: #3e7eb3; */
-	/* background: #4bc0dd; */
-	background: url("/design/img/bg/email_02.jpg");
+	border-color: #3e7eb3;
+	background: #4bc0dd;
+	/* background: url("/design/img/bg/email_02.jpg"); */
 }
 
 div#contact p.display-content#instagram {
